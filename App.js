@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
-import MemoDetailScreen from './src/screens/MemoDetailScreen';
+import MemoEditScreen from './src/screens/MemoEditScreen';
 
 export default class App extends React.Component {
   render(){
@@ -10,7 +10,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
 
         <Appbar />
-        <MemoDetailScreen />
+        <MemoEditScreen />
 
       </View>
       );
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFDF6',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingTop: 78,
   },
 });
